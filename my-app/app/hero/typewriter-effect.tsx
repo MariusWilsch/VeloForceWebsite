@@ -62,7 +62,7 @@ export const TypewriterEffectSmooth = ({
       >
         <div
           // Without fluid text
-          className="text-lg sm:text-3xl  md:text-[32px] min-[1000px]:text-[34px]  xl:text-[44px] font-bold"
+          className="text-3xl md:text-4xl lg:text-[2.5rem] xl:text-5xl 2xl:text-[3.3rem] font-bold"
           // With fluid
           // className="text-lg sm:text-1xl md:text-3xl xl:text-4xl font-bold"
           style={{
@@ -86,7 +86,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-7 md:h-10 xl:h-12 bg-blue-500",
+          "block rounded-sm w-[4px] h-9 md:h-10 xl:h-12 2xl:h-[3.2rem] bg-secondary",
           cursorClassName
         )}
       ></motion.span>
