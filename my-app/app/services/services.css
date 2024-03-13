@@ -159,7 +159,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #why-choose-892 .cs-container {
-        max-width: 80rem;
+        max-width: 85rem;
     }
     #why-choose-892 .cs-item {
         grid-column: span 2;

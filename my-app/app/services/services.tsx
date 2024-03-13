@@ -93,7 +93,7 @@ const Services: React.FC = () => {
   return (
     <Section>
       <Content topper="Services" title="Our Services" text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia incidunt quia enim mollitia delectus? Perferendis sapiente quaerat quos. Odit quasi similique nobis earum laudantium ad doloribus quos eos quod. Delectus?" />
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 2xl:gap-x-8'>
         <Meteors />
         <Meteors />
         <Meteors />
