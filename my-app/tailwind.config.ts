@@ -13,6 +13,7 @@ const config: Config = {
     extend: {
       colors: {
         secondary: 'rgb(113, 31, 154)',
+        accent: '#111827',
       },
       animation: {
         shimmer: "shimmer 2s linear infinite",

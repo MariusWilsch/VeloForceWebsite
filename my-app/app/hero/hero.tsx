@@ -1,7 +1,7 @@
 import './hero.css'
 import { TypewriterEffectSmoothDemo } from './typewriter-effect'
 import Image from 'next/image'
-import HeroImage from '@/public/Hero_Picture.webp'
+import HeroImage from '@/public/hero1.png'
 
 export const Hero = () => (
   <section id="hero-408">

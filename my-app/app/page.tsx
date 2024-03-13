@@ -1,7 +1,8 @@
 import Header from "./header/header"
 import Hero from "./hero/hero"
-import Services from "./sec-services/services"
-import WhyChooseUs from "./sec-whyChooseUs/whyChooseUs"
+import Services from "./services/services"
+import MeetTheTeam from "./team/team"
+import WhyUs from "./whyUs/whyUs"
 
 
 
@@ -13,7 +14,9 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
+      <WhyUs />
+      <MeetTheTeam />
     </div>
   )
 }
