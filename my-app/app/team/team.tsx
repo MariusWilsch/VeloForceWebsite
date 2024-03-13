@@ -9,7 +9,6 @@ const CSContent = () => {
         <span className="cs-topper">Our Expert Team</span>
         <h2 className="cs-title">Meet The Team Behind Their Success Story</h2>
       </div>
-      <a href="#" className="cs-button-solid">View All Members</a>
     </div>
   )
 }

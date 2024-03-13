@@ -36,7 +36,7 @@
         text-align: inherit;
         letter-spacing: 0.1em;
         font-weight: 700;
-        color: var(--primary);
+        color: var(--secondary);
         margin-bottom: 0.25rem;
         display: block;
     }
@@ -124,7 +124,7 @@
         background-color: var(--primary);
     }
     #meet-team-1141 .cs-item:hover .cs-name {
-        color: var(--secondary);
+        color: white;
     }
     #meet-team-1141 .cs-item:hover .cs-job {
         color: var(--bodyTextColorWhite);
@@ -172,7 +172,7 @@
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
         margin-right: 0;
-        color: var(--bodyTextColor);
+        color: var(--accentCol);
         display: block;
         transition: color 0.3s;
     }
