@@ -46,7 +46,7 @@ const Button: React.FC<ButtonProps> = ({ href, children }) => (
 
 export function Meteors() {
   return (
-    <div className="">
+    <div className="transition-transform duration-700 hover:scale-105">
       <div className=" w-full relative max-w-xs">
         <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
         <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
@@ -93,7 +93,7 @@ const Services: React.FC = () => {
   return (
     <Section>
       <Content topper="Services" title="Our Services" text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia incidunt quia enim mollitia delectus? Perferendis sapiente quaerat quos. Odit quasi similique nobis earum laudantium ad doloribus quos eos quod. Delectus?" />
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4'>
         <Meteors />
         <Meteors />
         <Meteors />
