@@ -6,11 +6,14 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // corePlugins: {
-  //   fontSize: false,
-  // },
   theme: {
     extend: {
+      padding: {
+        section: 'clamp(3.75rem, 7.82vw, 6.25rem) 1rem',
+      },
+      boxShadow: {
+        white: '0 10px 15px -3px rgba(255, 255, 255, 0.02), 0 4px 6px -2px rgba(255, 255, 255, 0.01)',
+      },
       colors: {
         secondary: 'rgb(113, 31, 154)',
         accent: '#111827',
@@ -46,9 +49,7 @@ const config: Config = {
           },
         },
       },
-      plugins: [
-        // require('tailwindcss-fluid-type')
-      ],
+      plugins: [],
     },
   }
 }
