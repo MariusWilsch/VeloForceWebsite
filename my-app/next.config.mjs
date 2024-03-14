@@ -1,7 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['csimg.nyc3.cdn.digitaloceanspaces.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'csimg.nyc3.cdn.digitaloceanspaces.com',
+        port: ""
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.sanity.io',
+        port: ""
+      }
+    ]
+
   },
 };
 
