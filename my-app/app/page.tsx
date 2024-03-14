@@ -7,8 +7,10 @@ import Services from "./services/services"
 import MeetTheTeam from "./team/team"
 import WhyUs from "./whyUs/whyUs"
 
-//* 1. change the services to hover card component from accenteiry
-//* 2. Add a section for who is this for
+
+//* 1. Add a white shaow blob from the left to the middle of the screen to add depth to the page
+//* 2. Or add a line that goes through the boxes in the forWho section
+
 
 export default function Home() {
   return (
