@@ -24,7 +24,7 @@ interface ContentProps {
 }
 
 const Content: React.FC<ContentProps> = ({ topper, title, text }) => (
-  <div className="cs-content">
+  <div className="cs-content my-10">
     <span className="cs-topper">{topper}</span>
     <h2 className="cs-title">{title}</h2>
     <p className="cs-text">{text}</p>

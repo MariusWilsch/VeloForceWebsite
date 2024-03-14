@@ -37,7 +37,7 @@ const WhyUs = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center items-center min-h-screen text-center w-full p-section'>
+    <div id='whyUs' className='flex flex-col justify-center items-center min-h-screen text-center w-full p-section'>
       <span className="cs-topper">Why choose us</span>
       <h2 className="cs-title">Lorem ipsum badfasfdasfdsafadsfdasfdsaffdsaf</h2>
       <div className='grid grid-cols-3 grid-rows-3 px-4 w-full md:w-[90%] mx-auto'>

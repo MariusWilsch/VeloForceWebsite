@@ -22,13 +22,15 @@
 }
 
 html {
-  scroll-behavior: smooth;
+--scroll-behavior: smooth!important;
+scroll-behavior: smooth!important;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-color: black;
+ 
 }
 
 *, *:before, *:after {

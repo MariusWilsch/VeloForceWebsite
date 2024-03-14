@@ -20,7 +20,7 @@ interface CSCardItemProps {
 
 const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
   return (
-    <li className="cs-item">
+    <li className="cs-item pt-10" >
       <div className="cs-picture">
         <Image
           src={imgSrc}
@@ -48,7 +48,7 @@ const CSCardGroup = () => {
   ]
 
   return (
-    <ul className="cs-card-group">
+    <ul className="cs-card-group ">
       {teamMembers.map((member, index) => (
         <CSCardItem key={index} {...member} />
       ))}
@@ -58,8 +58,8 @@ const CSCardGroup = () => {
 
 const Team = () => {
   return (
-    <section id="meet-team-1141">
-      <div className="cs-container">
+    <section id="meet-team-1141" className=''>
+      <div className="cs-container ">
         <CSContent />
         <CSCardGroup />
       </div>
