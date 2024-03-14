@@ -10,7 +10,7 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ children }) => (
-  <section id="why-choose-892">
+  <section id="Exploring ">
     <div className="cs-container">
       {children}
 
