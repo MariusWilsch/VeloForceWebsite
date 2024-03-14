@@ -68,3 +68,21 @@ body {
     margin: 0;
     color: var(--bodyTextColor);
 }
+
+
+.underline-on-hover {
+  position: relative;
+}
+.underline-on-hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width .3s;
+}
+.underline-on-hover:hover::after {
+  width: 100%;
+}

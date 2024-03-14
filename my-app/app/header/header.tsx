@@ -46,16 +46,16 @@ const MobileMenuButton = () => (
 
 interface NavItemProps {
   text: string;
+  href: string;
 }
 
-const NavItem = ({ text }: NavItemProps) => (
+import Link from 'next/link';
+
+const NavItem = ({ text, href }: NavItemProps) => (
   <li className="cs-li">
-    <a
-      className="cs-li-link"
-      href=""
-    >
+    <Link href={href} className='cs-li-link underline-on-hover'>
       {text}
-    </a>
+    </Link>
   </li>
 );
 
@@ -72,11 +72,11 @@ const Navigation = () => (
         className="cs-ul"
         id="cs-expanded"
       >
-        <NavItem text="Home" />
-        <NavItem text="About" />
-        <NavItem text="Services" />
-        <NavItem text="About Us" />
-        <NavItem text="FAQ" />
+        <NavItem text="Home" href="/" />
+        <NavItem text="About Us" href="/" />
+        <NavItem text="Services" href="/" />
+        <NavItem text="Blog" href="/blog" />
+        <NavItem text="FAQ" href="/" />
       </ul>
     </div>
   </nav>
