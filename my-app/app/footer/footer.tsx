@@ -1,14 +1,30 @@
+import Link from 'next/link';
 import './footer.css';
+import Image from 'next/image';
 
-const SocialLink = ({ label, url, iconSrc }) => {
+interface SocialLinkProps {
+  label: string;
+  url: string;
+  iconSrc: string;
+}
+
+const SocialLink: React.FC<SocialLinkProps> = ({ label, url, iconSrc }) => {
   return (
     <li className="cs-social-li">
-      <a href={url} className="cs-social-link" aria-label={label} target="_blank" rel="noopener">
-        <img className="cs-social-icon cs-default" src={iconSrc} alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true" />
-      </a>
+      <Link href={url} target='_blank'>
+        <div className="cs-social-link" aria-label={label} >
+          <Image
+            className="cs-social-icon cs-default"
+            src={iconSrc}
+            alt="icon"
+            width={12}
+            height={12}
+          />
+        </div>
+      </Link>
     </li>
   );
-};
+};;
 
 const BottomSection = () => {
   return (

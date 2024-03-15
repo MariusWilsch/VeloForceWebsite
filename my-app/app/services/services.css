@@ -2,17 +2,19 @@
 @media only screen and (min-width: 0rem) {
     #why-choose-892 {
         /* Centers Button */
-        text-align: center;
         padding: var(--sectionPadding);
         /* prevents the arrow from causing an overflow */
         overflow: hidden;
         position: relative;
         z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     #why-choose-892 .cs-container {
         width: 100%;
         /* changes to 1280px at tablet */
-        max-width: 34.375rem;
+        /* max-width: 34.375rem; */
         margin: auto;
         display: flex;
         flex-direction: column;

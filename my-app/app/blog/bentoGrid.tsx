@@ -48,11 +48,11 @@ export const BentoGridItem = ({
         <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
           {title}
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300 line-clamp-3 lg:line-clamp-6">
           {description}
         </div>
       </div>
-      <button className="group-hover/bento:translate-x-2 transition duration-200 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded self-start">
+      <button className="group-hover/bento:translate-x-2 transition duration-200 bg-blue-500 hover:bg-blue-700 text-white font-bold p-1  px-4 rounded self-start">
         {slug ? (
           <Link href={slug}>Read more</Link>
         ) : (

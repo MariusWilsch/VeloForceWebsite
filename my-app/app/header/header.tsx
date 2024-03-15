@@ -73,10 +73,10 @@ const Navigation = () => (
         id="cs-expanded"
       >
         <NavItem text="Home" href="/" />
-        <NavItem text="About Us" href="/" />
-        <NavItem text="Services" href="/" />
+        <NavItem text="Services" href="#why-choose-892" />
+        {/* <NavItem text="Why choose us" href="#whyUs" /> */}
+        <NavItem text="About Us" href="#meet-team-1141" />
         <NavItem text="Blog" href="/blog" />
-        <NavItem text="FAQ" href="/" />
       </ul>
     </div>
   </nav>
@@ -93,7 +93,7 @@ const Header = () => (
     <div className="cs-container">
       <Logo />
       <Navigation />
-      <ShimmerButton />
+      {/* <ShimmerButton /> */}
     </div>
   </header>
 );

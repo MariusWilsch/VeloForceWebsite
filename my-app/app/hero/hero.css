@@ -4,7 +4,6 @@
         padding: var(--sectionPadding);
         /* 112px - 200px */
         padding-top: clamp(7rem, 15vw, 10.0rem);
-        padding-right: 0;
     }
     #hero-408 .cs-container {
         width: 100%;
@@ -16,7 +15,7 @@
         justify-content: center;
         align-items: center;
         /* 36px - 100px */
-        gap: clamp(2.25rem, 10vw, 6.25rem);
+        gap: clamp(2.00rem, 10vw, 6.25rem);
     }
     #hero-408 .cs-content {
         max-width: 39.375rem;
@@ -30,13 +29,13 @@
     }
     #hero-408 .cs-text {
         /* 16px - 25px */
-        font-size: clamp(0.9rem, 2vw, 1.2rem);
+        font-size: clamp(0.7rem, 2vw, 1.2rem);
         line-height: 1.5rem;
         text-align: left;
         width: 100%;
         max-width: 40.625rem;
         margin: 0;
-        margin-bottom: clamp(1.5rem, 2.0vw, 2rem);
+        margin-bottom: clamp(1.2rem, 2.0vw, 2rem);
         color: var(--bodyTextColor);
     }
     #hero-408 .cs-header {

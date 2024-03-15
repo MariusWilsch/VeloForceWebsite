@@ -6,7 +6,7 @@ interface GridItemProps {
 }
 
 const GridItem: React.FC<GridItemProps> = ({ children, className }) => (
-  <div className={`p-4 flex justify-center items-center border text-white  border-gray-600 min-w-[200px] min-h-[200px] ${className}`}>
+  <div className={`p-4 flex justify-center items-center border text-white border-gray-600 ${className}`}>
     {children}
   </div>
 );

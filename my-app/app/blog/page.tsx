@@ -9,9 +9,10 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+
+export const revalidate = 60;
+
 import { BentoGrid, BentoGridItem } from "./bentoGrid";
-import Image from "next/image";
-import { urlFor } from "../lib/sanity";
 
 async function getData() {
   const query = `
@@ -32,13 +33,10 @@ const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
 );
 
-
 export function BentoGridDemo({ blogs }: { blogs: blogPost[] }) {
-  blogs.forEach((blog) => {
-    console.log(blog.currentSlug);
-  });
+
   return (
-    <BentoGrid className="max-w-6xl mx-auto">
+    <BentoGrid className="max-w-6xl mx-auto w-[85%] md:w-[95%] ">
       {blogs.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -47,14 +45,13 @@ export function BentoGridDemo({ blogs }: { blogs: blogPost[] }) {
           header={<Skeleton />}
           icon={<IconFileBroken className="h-4 w-4 text-neutral-500" />}
           slug={`/blog/${item.currentSlug}`}
-          className={i === 3 || i === 6 ? "md:col-span-2" : "aspect-[1]"}
+          className={i === 3 || i === 6 ? "md:col-span-2" : "md:aspect-[1]"}
         >
         </BentoGridItem>
       ))}
     </BentoGrid>
   );
 }
-
 
 interface ContentProps {
   topper: string;
@@ -73,8 +70,6 @@ const Content: React.FC<ContentProps> = ({ topper, title, text }) => (
 const blog = async () => {
   const data: blogPost[] = await getData()
   console.log(data);
-
-
 
   return (
     <div className="p-section">
