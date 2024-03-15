@@ -6,7 +6,7 @@ interface GridItemProps {
 }
 
 const GridItem: React.FC<GridItemProps> = ({ children, className }) => (
-  <div className={`p-4 flex justify-center items-center border text-white  border-gray-600 min-w-[200px] min-h-[200px] ${className}`}>
+  <div className={`p-4 flex justify-center items-center border text-white border-gray-600 ${className}`}>
     {children}
   </div>
 );
@@ -39,7 +39,7 @@ const WhyUs = () => {
   return (
     <div id='whyUs' className='flex flex-col justify-center items-center min-h-screen text-center w-full p-section'>
       <span className="cs-topper">Why choose us</span>
-      <h2 className="cs-title">Lorem ipsum badfasfdasfdsafadsfdasfdsaffdsaf</h2>
+      <h2 className="cs-title">Lorem ipsum 3rdWord</h2>
       <div className='grid grid-cols-3 grid-rows-3 px-4 w-full md:w-[90%] mx-auto'>
         {texts.map((text, index) => (
           <GridItem key={index} className={borderClasses[index]}>

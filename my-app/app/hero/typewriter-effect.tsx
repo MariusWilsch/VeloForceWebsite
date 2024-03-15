@@ -62,7 +62,7 @@ export const TypewriterEffectSmooth = ({
       >
         <div
           // Without fluid text
-          className="text-3xl md:text-4xl lg:text-[2.5rem] xl:text-5xl 2xl:text-[3.3rem] font-bold"
+          className=" max-[430px]:text-lg text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] xl:text-5xl 2xl:text-[3.3rem] font-bold"
           // With fluid
           // className="text-lg sm:text-1xl md:text-3xl xl:text-4xl font-bold"
           style={{

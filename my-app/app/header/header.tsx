@@ -93,7 +93,7 @@ const Header = () => (
     <div className="cs-container">
       <Logo />
       <Navigation />
-      <ShimmerButton />
+      {/* <ShimmerButton /> */}
     </div>
   </header>
 );

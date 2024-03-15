@@ -26,10 +26,21 @@ html {
 scroll-behavior: smooth!important;
 }
 
+/* * {
+  border: 1px solid red;
+} */
+
+/* globals.css */
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: black;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
  
 }
 

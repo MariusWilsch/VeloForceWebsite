@@ -9,9 +9,8 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+
 import { BentoGrid, BentoGridItem } from "./bentoGrid";
-import Image from "next/image";
-import { urlFor } from "../lib/sanity";
 
 async function getData() {
   const query = `
@@ -27,7 +26,6 @@ async function getData() {
 
   return data;
 }
-
 
 const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
@@ -53,7 +51,6 @@ export function BentoGridDemo({ blogs }: { blogs: blogPost[] }) {
   );
 }
 
-
 interface ContentProps {
   topper: string;
   title: string;
@@ -71,8 +68,6 @@ const Content: React.FC<ContentProps> = ({ topper, title, text }) => (
 const blog = async () => {
   const data: blogPost[] = await getData()
   console.log(data);
-
-
 
   return (
     <div className="p-section">
