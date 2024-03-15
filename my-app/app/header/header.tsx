@@ -14,7 +14,7 @@ const Logo = () => (
       <Image
         alt="logo"
         src={LogoImage}
-        style={{ width: 'auto' }}
+        objectFit='contain'
       />
     </Link>
   </>
