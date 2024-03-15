@@ -10,7 +10,7 @@ import WhyUs from "./whyUs/whyUs"
 
 //* 1. Add a white shaow blob from the left to the middle of the screen to add depth to the page
 //* 2. Or add a line that goes through the boxes in the forWho section
-//* Test
+//! Mobile menu button isn't working yet, I think I didn't migrate the js 
 
 export default async function Home() {
   return (

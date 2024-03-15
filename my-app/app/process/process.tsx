@@ -1,4 +1,5 @@
-import React from 'react';
+import Image from 'next/image'; import React from 'react';
+
 import './process.css';
 
 
@@ -20,11 +21,13 @@ const Content: React.FC = () => (
   </div>
 );
 
+
+
 const CardItem: React.FC<{ title: string, text: string, imgSrc: string }> = ({ title, text, imgSrc }) => (
   <li className="cs-item">
-    <picture className="cs-picture">
-      <img className="cs-icon" src={imgSrc} alt="icon" width="32" height="32" loading="lazy" decoding="async" aria-hidden="true" />
-    </picture>
+    <div className="cs-picture">
+      <Image className="cs-icon" src={imgSrc} alt="icon" width={32} height={32} />
+    </div>
     <h3 className="cs-h3">{title}</h3>
     <p className="cs-item-p">{text}</p>
   </li>

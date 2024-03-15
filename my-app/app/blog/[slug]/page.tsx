@@ -25,8 +25,7 @@ async function getBlogData(slug: string) {
 
 
 const BlogArticle = async ({ params }: { params: { slug: string } }) => {
-  const data: blogArticle = await getBlogData(params.slug)
-  console.log(data, params.slug)
+  const data: blogArticle = await getBlogData(params.slug);
   return (
     <div className='w-full  flex flex-col items-center text-center p-section'>
       <SectionHeader topper='Blog' title={data.title} text='' />
