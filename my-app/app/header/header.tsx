@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LogoImage from '@/public/logo-test.png';
 
-
 const Logo = () => (
   <>
     <Link
@@ -14,6 +13,8 @@ const Logo = () => (
       <Image
         alt="logo"
         src={LogoImage}
+        width={143}
+        height={128}
         className='w-auto'
       />
     </Link>
