@@ -15,7 +15,7 @@ const Logo = () => (
         src={LogoImage}
         width={143}
         height={128}
-        className='w-auto'
+        className='w-auto h-8 sm:h-12'
       />
     </Link>
   </>
