@@ -54,14 +54,14 @@ const SideBySideContentBox = () => {
 
 
   return (
-    <div className='p-section'>
-      <Content topper="Are you ready to take your operations to the next level?" title="" text="" />
+    <div className='p-section w-full sm:w-4/5 mx-auto'>
+      <Content topper="Why Choose 8?" title="We're the best in the business" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
       {contentArray.map((item, index) => (
         <div className="flex flex-col sm:flex-row text-white m-10" key={index}>
           {index % 2 === 0 ? (
             <>
               <div className="w-full sm:w-1/2 p-4">
-                <h1 className="text-xl xl:text-2xl font-bold mb-4">{item.header}</h1>
+                <h1 className="text-xl font-bold mb-4">{item.header}</h1>
                 <p>{item.text}</p>
               </div>
               <div className="hidden sm:block sm:w-1/2 p-4"></div>
@@ -70,7 +70,7 @@ const SideBySideContentBox = () => {
             <>
               <div className="hidden sm:block sm:w-1/2 p-4"></div>
               <div className="w-full sm:w-1/2 p-4">
-                <h1 className="text-xl xl:text-2xl  font-bold mb-4"> {item.header} </h1>
+                <h1 className="text-xl font-bold mb-4"> {item.header} </h1>
                 <p>{item.text}</p>
               </div>
             </>

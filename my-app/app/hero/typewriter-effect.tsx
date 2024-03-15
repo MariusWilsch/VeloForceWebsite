@@ -98,21 +98,8 @@ export const TypewriterEffectSmooth = ({
 export function TypewriterEffectSmoothDemo() {
   const words = [
     {
-      text: "Build Business Foundations with next-gen",
-    },
-    {
       text: "Automated systems",
       className: "text-secondary",
-    },
-    {
-      text: "",
-    },
-    {
-      text: "",
-    },
-    {
-      text: "",
-
     },
   ];
   return (

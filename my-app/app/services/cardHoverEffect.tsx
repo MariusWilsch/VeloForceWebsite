@@ -21,7 +21,7 @@ export const HoverEffect = ({
     <div
       //! Maybe add a custom breakpoint here at around 900 - 1100px depending on the text length
       className={cn(
-        "grid grid-cols-1 md:grid-cols-3 py-5",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ",
         className
       )}
     >
@@ -136,7 +136,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-5 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
@@ -147,13 +147,19 @@ export const CardDescription = ({
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-6xl mx-auto">
       <HoverEffect items={projects} />
     </div>
   );
 }
 
 export const projects = [
+  {
+    title: "Consultation",
+    description:
+      "The goal here is to get to know how your business operates, want to achieve and what your business need to step to the next level.",
+    link: "https://stripe.com",
+  },
   {
     title: "Consultation",
     description:

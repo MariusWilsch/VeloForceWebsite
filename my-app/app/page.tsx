@@ -12,6 +12,12 @@ import WhyUs from "./whyUs/whyUs"
 //* 2. Or add a line that goes through the boxes in the forWho section
 //! Mobile menu button isn't working yet, I think I didn't migrate the js 
 
+import React from "react";
+
+
+
+
+
 export default async function Home() {
   return (
     <div >
@@ -22,6 +28,7 @@ export default async function Home() {
       <CalendlyWidget />
       <MeetTheTeam />
       <Footer />
+      
     </div>
   )
 }

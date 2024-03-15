@@ -15,16 +15,19 @@ export const metadata: Metadata = {
   description: "VeloxForce is a software development company that specializes in building web AI Automation Tools. We are a team of experienced developers who are passionate about creating high-quality software.",
 };
 
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-full h-full">
-      <body className={`w-full h-full ${quicksand.className}`}>
+    <html lang="en" >
+      <body className={`  ${quicksand.className}`}>
         <Header />
         {children}
+        
       </body>
     </html>
   );

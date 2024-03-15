@@ -1,21 +1,20 @@
 import './header.css'
+import Image from 'next/image';
+import Link from 'next/link';
+import LogoImage from '@/public/logo-removebg-preview.png';
 
-// Logo.tsx
 const Logo = () => (
-  <a
-    aria-label="back to home"
-    className="cs-logo"
-    href=""
-  >
-    <img
-      alt="logo"
-      aria-hidden="true"
-      decoding="async"
-      height="29"
-      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg"
-      width="210"
-    />
-  </a>
+  <>
+    <Link
+      href={"/"}
+      className="cs-logo"
+    >
+      <Image
+        alt="logo"
+        src={LogoImage}
+      />
+    </Link>
+  </>
 );
 
 // MobileMenuButton.tsx
@@ -49,7 +48,7 @@ interface NavItemProps {
   href: string;
 }
 
-import Link from 'next/link';
+
 
 const NavItem = ({ text, href }: NavItemProps) => (
   <li className="cs-li">

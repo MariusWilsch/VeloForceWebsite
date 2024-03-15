@@ -8,7 +8,7 @@ interface ContentProps {
 }
 
 const Content: React.FC<ContentProps> = ({ topper, title, text }) => (
-  <div className="flex flex-col items-center text-center p-8">
+  <div className="flex flex-col items-center text-center">
     <span className="cs-topper">{topper}</span>
     <h2 className="cs-title">{title}</h2>
     <p className="cs-text">{text}</p>
@@ -30,7 +30,7 @@ const CalendlyWidget = () => {
   }, []);
 
   return (
-    <div className='p-4'>
+    <div id='schedule' className='p-4'>
       <Content
         topper="Schedule a"
         title="30-minute meeting"
