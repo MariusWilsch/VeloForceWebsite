@@ -10,6 +10,8 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
+export const revalidate = 60;
+
 import { BentoGrid, BentoGridItem } from "./bentoGrid";
 
 async function getData() {
