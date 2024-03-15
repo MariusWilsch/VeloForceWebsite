@@ -33,7 +33,7 @@ const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
 );
 
-export function BentoGridDemo({ blogs }: { blogs: blogPost[] }) {
+function BentoGridDemo({ blogs }: { blogs: blogPost[] }) {
 
   return (
     <BentoGrid className="max-w-6xl mx-auto w-[85%] md:w-[95%] ">
@@ -67,9 +67,8 @@ const Content: React.FC<ContentProps> = ({ topper, title, text }) => (
   </div>
 );
 
-const blog = async () => {
+const Blog = async () => {
   const data: blogPost[] = await getData()
-  console.log(data);
 
   return (
     <div className="p-section">
@@ -79,4 +78,4 @@ const blog = async () => {
   )
 }
 
-export default blog
+export default Blog
