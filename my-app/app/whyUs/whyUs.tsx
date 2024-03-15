@@ -45,19 +45,19 @@ const WhyUs = () => {
     "border-l-0 text-3xl md:text-[32px] lg:text-5xl ",
     "text-2xl md:text-[32px] lg:text-5xl",
     "border-r-0 text-2xl md:text-[32px] lg:text-5xl",
-    "border-l-0 text-left",
-    " text-left",
-    "border-r-0 text-left",
-    "border-l-0 text-left",
-    " text-left",
-    " border-r-0 text-left"
+    "border-l-0 text-left text-slate-300",
+    " text-left text-slate-300",
+    "border-r-0 text-left text-slate-300",
+    "border-l-0 text-left text-slate-300",
+    " text-left text-slate-300",
+    " border-r-0 text-left text-slate-300"
   ];
 
   return (
     <div className='flex flex-col justify-center items-center min-h-screen text-center w-full p-section'>
       <span className="cs-topper">The goal of every business is to grow and thrive</span>
       <h2 className="cs-title">What to choose?</h2>
-      <div className='mt-2 grid grid-cols-3 grid-rows-3 px-4 w-full md:w-[90%] mx-auto'>
+      <div className='mt-4 grid grid-cols-3 grid-rows-3 px-4 w-full md:w-[90%] mx-auto'>
         {texts.map((text, index) => (
           <GridItem key={index} className={borderClasses[index]} icon={icons[index]}>
             {text}

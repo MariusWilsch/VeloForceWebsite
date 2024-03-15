@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import dirk from '@/public/Dirk.png'
+import Marius from '@/public/Marius.png'
 import './team.css'
 
 const CSContent = () => {
@@ -8,6 +10,9 @@ const CSContent = () => {
       <div className="cs-flex">
         <span className="cs-topper">About </span>
         <h2 className="cs-title">The Founders</h2>
+        <p className='text-slate-300 text-lg' >
+          We are a team of passionate professionals who are dedicated to providing the best possible service to our clients. Our team is made up of experienced professionals who are dedicated
+        </p>
       </div>
     </div>
   )
@@ -25,11 +30,9 @@ const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
         <Image
           src={imgSrc}
           alt={name}
-          width={305}
-          height={407}
           layout="responsive"
           objectFit='cover'
-          className="w-full h-full object-top absolute top-0 left-0 z-[-1] transition-transform duration-700"
+          className="z-[-1] transition-transform duration-700 ml-8 md:ml-4"
         />
       </div>
       <div className="cs-info">
@@ -42,8 +45,8 @@ const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
 
 const CSCardGroup = () => {
   const teamMembers = [
-    { name: 'Dirk Tunderman', job: '', imgSrc: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg' },
-    { name: 'Marius Wilsch', job: '', imgSrc: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg' },
+    { name: 'Dirk Tunderman', job: 'Co-Founder', imgSrc: dirk },
+    { name: 'Marius Wilsch', job: 'Co-Founder', imgSrc: Marius },
     // add more team members here
   ]
 

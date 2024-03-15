@@ -125,7 +125,6 @@
         height: auto;
         margin: 0 0 0.5rem 0;
         /* removed at tablet */
-        aspect-ratio: 0.80589681;
         border-radius: 1rem;
         /* clips the img corners */
         /* clips img tag from overflowing it on hover */
@@ -137,7 +136,7 @@
     #meet-team-1141 .cs-info {
         width: 90%;
         margin: -2.625rem 0 0;
-        padding: 1rem;
+        padding: 0.5rem;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         background-color: white;
@@ -177,11 +176,6 @@
     }
     #meet-team-1141 .cs-item {
         width: 100%;
-    }
-    #meet-team-1141 .cs-picture {
-        height: 25.4375rem;
-        /* remove the aspect ratio so the height can be squished */
-        aspect-ratio: initial;
     }
 }
 /* Small Desktop - 1024px */

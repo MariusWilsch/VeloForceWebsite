@@ -62,7 +62,7 @@ const SideBySideContentBox = () => {
             <>
               <div className="w-full sm:w-1/2 p-4">
                 <h1 className="text-xl font-bold mb-4">{item.header}</h1>
-                <p>{item.text}</p>
+                <p className='text-slate-300'>{item.text}</p>
               </div>
               <div className="hidden sm:block sm:w-1/2 p-4"></div>
             </>
@@ -71,7 +71,7 @@ const SideBySideContentBox = () => {
               <div className="hidden sm:block sm:w-1/2 p-4"></div>
               <div className="w-full sm:w-1/2 p-4">
                 <h1 className="text-xl font-bold mb-4"> {item.header} </h1>
-                <p>{item.text}</p>
+                <p className='text-slate-300'>{item.text}</p>
               </div>
             </>
           )}

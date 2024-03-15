@@ -1,7 +1,9 @@
+'use client';
 import './header.css'
 import Image from 'next/image';
 import Link from 'next/link';
-import LogoImage from '@/public/logo-removebg-preview.png';
+import LogoImage from '@/public/logo-test.png';
+
 
 const Logo = () => (
   <>
@@ -12,87 +14,54 @@ const Logo = () => (
       <Image
         alt="logo"
         src={LogoImage}
+        style={{ width: 'auto' }} // or replace 'auto' with a specific value
       />
     </Link>
   </>
 );
 
-// MobileMenuButton.tsx
-const MobileMenuButton = () => (
-  <button
-    aria-label="mobile menu toggle"
-    className="cs-toggle"
-  >
-    <div
-      aria-hidden="true"
-      className="cs-box"
-    >
-      <span
-        aria-hidden="true"
-        className="cs-line cs-line1"
-      />
-      <span
-        aria-hidden="true"
-        className="cs-line cs-line2"
-      />
-      <span
-        aria-hidden="true"
-        className="cs-line cs-line3"
-      />
-    </div>
-  </button>
-);
+
 
 interface NavItemProps {
   text: string;
   href: string;
+  className?: string; // Add an optional className property
 }
 
-
-
-const NavItem = ({ text, href }: NavItemProps) => (
-  <li className="cs-li">
+const NavItem = ({ text, href, className }: NavItemProps) => (
+  <li className={`cs-li ${className}`}>
     <Link href={href} className='cs-li-link underline-on-hover'>
       {text}
     </Link>
   </li>
 );
 
-// Navigation.tsx
-const Navigation = () => (
-  <nav
-    className="cs-nav"
-    role="navigation"
-  >
-    <MobileMenuButton />
-    <div className="cs-ul-wrapper">
-      <ul
-        aria-expanded="false"
-        className="cs-ul"
-        id="cs-expanded"
-      >
-        <NavItem text="Home" href="/" />
-        <NavItem text="Services" href="#why-choose-892" />
-        {/* <NavItem text="Why choose us" href="#whyUs" /> */}
-        <NavItem text="About Us" href="#meet-team-1141" />
-        <NavItem text="Blog" href="/blog" />
-      </ul>
-    </div>
-  </nav>
-);
 
-// ShimmerButton.tsx
-const ShimmerButton = () => (
-  <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">Shimmer</button>
-);
 
 // Header.tsx
 const Header = () => (
   <header id="cs-navigation">
     <div className="cs-container">
       <Logo />
-      <Navigation />
-      {/* <ShimmerButton /> */}
+      <div className="cs-ul-wrapper">
+        <ul
+          aria-expanded="false"
+          className="cs-ul"
+          id="cs-expanded"
+        >
+          <NavItem text="Services" href="#why-choose-892" className='hidden min-[480px]:block' />
+          {/* <NavItem text="Why choose us" href="#whyUs" /> */}
+          <NavItem text="About Us" href="#meet-team-1141" className='hidden min-[480px]:block' />
+          <NavItem text="Blog" href="/blog" />
+          <button className="relative inline-flex h-8 sm:h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+
+            <span className="absolute inset-[-1000%] animate-[spin_2s_line</button>ar_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+              <Link href="#schedule">Book a call</Link>
+            </span>
+          </button>
+        </ul>
+      </div>
     </div>
   </header>
 );

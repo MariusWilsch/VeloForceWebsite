@@ -11,7 +11,7 @@ export const Hero = () => (
     <div className="cs-container ">
       <div className="cs-content">
 
-        <h1 className=" max-[430px]:text-lg text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] xl:text-[2.8rem] text-white whitespace-nowrap">
+        <h1 className=" max-[460px]:text-lg text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] xl:text-[2.8rem] text-white whitespace-nowrap">
           Build Business Foundations with next-gen
         </h1>
         <TypewriterEffectSmoothDemo />
@@ -34,7 +34,7 @@ export const Hero = () => (
         </button>
       </div>
       <div className="cs-stat-group">
-        <picture className="cs-background">
+        <picture className="cs-background ml-4">
           <Image
             src={HeroImage}
             alt="hero-picture"
