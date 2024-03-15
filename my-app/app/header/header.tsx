@@ -14,7 +14,7 @@ const Logo = () => (
       <Image
         alt="logo"
         src={LogoImage}
-        style={{ width: 'auto' }} // or replace 'auto' with a specific value
+        style={{ width: 'auto' }}
       />
     </Link>
   </>
@@ -25,11 +25,11 @@ const Logo = () => (
 interface NavItemProps {
   text: string;
   href: string;
-  className?: string; // Add an optional className property
+  className?: string;
 }
 
 const NavItem = ({ text, href, className }: NavItemProps) => (
-  <li className={`cs-li ${className}`}>
+  <li className={`cs-li text-lg ${className}`}>
     <Link href={href} className='cs-li-link underline-on-hover'>
       {text}
     </Link>

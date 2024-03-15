@@ -1,13 +1,7 @@
 import { blogPost } from "../lib/interface";
 import { client } from "../lib/sanity";
 import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
   IconFileBroken,
-  IconSignature,
-  IconTableColumn,
 } from "@tabler/icons-react";
 
 export const revalidate = 60;

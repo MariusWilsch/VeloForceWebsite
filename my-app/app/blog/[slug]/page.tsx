@@ -22,7 +22,11 @@ async function getBlogData(slug: string) {
   return data;
 }
 
-
+const LoadingSpinner = () => (
+  <div className="flex justify-center items-center">
+    <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-"></div>
+  </div>
+);
 
 const BlogArticle = async ({ params }: { params: { slug: string } }) => {
   const data: blogArticle = await getBlogData(params.slug);
