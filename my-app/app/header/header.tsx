@@ -14,7 +14,7 @@ const Logo = () => (
       <Image
         alt="logo"
         src={LogoImage}
-        objectFit='contain'
+        className='w-auto'
       />
     </Link>
   </>
@@ -29,7 +29,7 @@ interface NavItemProps {
 }
 
 const NavItem = ({ text, href, className }: NavItemProps) => (
-  <li className={`cs-li text-lg ${className}`}>
+  <li className={`cs-li ${className}`}>
     <Link href={href} className='cs-li-link underline-on-hover'>
       {text}
     </Link>
