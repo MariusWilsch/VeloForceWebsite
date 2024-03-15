@@ -9,10 +9,10 @@ interface GridItemProps {
 
 const GridItem: React.FC<GridItemProps> = ({ children, className, icon }) => (
   <div className={`p-4 flex justify-center items-center border text-white border-gray-600 md:min-w-[10rem] md:min-h-[15rem]  ${className}`}>
-    <div className="flex items-start">
-      {icon}
-      {children}
-    </div>
+    {/* <div className="flex items-start"> */}
+    {/* {icon} */}
+    {/* </div> */}
+    {children}
   </div>
 );
 
@@ -21,10 +21,10 @@ const WhyUs = () => {
     "Veloxforce solutions",
     "Regular software",
     "Hiring more employees",
-    "Build excactly based and intergradable with your current workflow",
+    "Build exactly based and integrable with your current workflow",
     "Will not satisfy all your needs, so you will still be left with some manual work",
     "Need training to get started, which will take time and money",
-    "After initial implementation there is always and option to build on top of it, which will make scaling easier",
+    "After initial implementation there is always an option to build on top of it, which will make scaling easier",
     "Bad customer support in case of any issues which will lead to downtime and loss of money",
     "As your business grows, you will need to hire more employees which will increase your expenses and decrease your profit margin."
   ];
@@ -33,12 +33,12 @@ const WhyUs = () => {
     null,
     null,
     null,
-    <IconThumbUp size={24} className="mr-2 flex-shrink-0 " />,
-    <IconThumbDown size={24} className="mr-2 flex-shrink-0" />,
-    <IconThumbDown size={24} className="mr-2 flex-shrink-0" />,
-    <IconThumbUp size={24} className="mr-2 flex-shrink-0" />,
-    <IconThumbDown size={24} className="mr-2 flex-shrink-0" />,
-    <IconThumbDown size={24} className="mr-2 flex-shrink-0" />
+    <IconThumbUp key={'1'} size={24} className="mr-2 flex-shrink-0 " />,
+    <IconThumbDown key={'2'} size={24} className="mr-2 flex-shrink-0" />,
+    <IconThumbDown key={'3'} size={24} className="mr-2 flex-shrink-0" />,
+    <IconThumbUp key={'4'} size={24} className="mr-2 flex-shrink-0" />,
+    <IconThumbDown key={'5'} size={24} className="mr-2 flex-shrink-0" />,
+    <IconThumbDown key={'6'} size={24} className="mr-2 flex-shrink-0" />
   ];
 
   const borderClasses = [
@@ -58,6 +58,7 @@ const WhyUs = () => {
       <span className="cs-topper">The goal of every business is to grow and thrive</span>
       <h2 className="cs-title">What to choose?</h2>
       <div className='mt-4 grid grid-cols-3 grid-rows-3 px-4 w-full md:w-[90%] mx-auto'>
+
         {texts.map((text, index) => (
           <GridItem key={index} className={borderClasses[index]} icon={icons[index]}>
             {text}

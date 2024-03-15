@@ -45,9 +45,7 @@ const Header = () => (
       <Logo />
       <div className="cs-ul-wrapper">
         <ul
-          aria-expanded="false"
           className="cs-ul"
-          id="cs-expanded"
         >
           <NavItem text="Services" href="#why-choose-892" className='hidden min-[480px]:block' />
           {/* <NavItem text="Why choose us" href="#whyUs" /> */}

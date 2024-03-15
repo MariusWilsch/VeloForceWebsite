@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import dirk from '@/public/Dirk.png'
 import Marius from '@/public/Marius.png'
 import './team.css'
@@ -20,7 +20,7 @@ const CSContent = () => {
 interface CSCardItemProps {
   name: string
   job: string
-  imgSrc: string
+  imgSrc: StaticImageData
 }
 
 const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
