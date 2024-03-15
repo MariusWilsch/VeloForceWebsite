@@ -20,7 +20,6 @@
         flex-direction: column;
         align-items: center;
         /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
         position: relative;
     }
     #why-choose-892 .cs-content {
