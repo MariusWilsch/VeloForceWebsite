@@ -35,7 +35,7 @@ const Content: React.FC<ContentProps> = ({ topper, title, text }) => (
 const Services: React.FC = () => {
   return (
     <Section>
-      <Content topper="Services" title="Our Services" text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia incidunt quia enim mollitia delectus? Perferendis sapiente quaerat quos. Odit quasi similique nobis earum laudantium ad doloribus quos eos quod. Delectus?" />
+      <Content topper="" title="Services" text="" />
       <CardHoverEffectDemo />
     </Section>
   );

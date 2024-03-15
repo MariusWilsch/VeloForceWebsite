@@ -155,21 +155,21 @@ export function CardHoverEffectDemo() {
 
 export const projects = [
   {
-    title: "Stripe",
+    title: "Consultation",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "The goal here is to get to know how your business operates, want to achieve and what your business need to step to the next level.",
     link: "https://stripe.com",
   },
   {
-    title: "Netflix",
+    title: "Development",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies and more on thousands of internet-connected devices.",
+      "In the development phase we will have continues communication to ensure that the project is customized to your business needs.",
     link: "https://netflix.com",
   },
   {
-    title: "Google",
+    title: "Long term Collaboration",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "Since technology is accelerating at a rapid pace, we offer a long term collaboration to ensure that your business always stays ahead of the curve.",
     link: "https://google.com",
   },
 ];

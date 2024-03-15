@@ -6,8 +6,8 @@ const CSContent = () => {
   return (
     <div className="cs-content">
       <div className="cs-flex">
-        <span className="cs-topper">Our Expert Team</span>
-        <h2 className="cs-title">Meet The Team Behind Their Success Story</h2>
+        <span className="cs-topper">About </span>
+        <h2 className="cs-title">The Founders</h2>
       </div>
     </div>
   )
@@ -42,8 +42,8 @@ const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
 
 const CSCardGroup = () => {
   const teamMembers = [
-    { name: 'Dirk Tunderman', job: 'Aesthetic Expert', imgSrc: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg' },
-    { name: 'Marius Wilsch', job: 'Aesthetic Expert', imgSrc: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg' },
+    { name: 'Dirk Tunderman', job: '', imgSrc: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg' },
+    { name: 'Marius Wilsch', job: '', imgSrc: 'https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fperson1.jpg' },
     // add more team members here
   ]
 

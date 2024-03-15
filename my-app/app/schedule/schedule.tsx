@@ -34,7 +34,7 @@ const CalendlyWidget = () => {
       <Content
         topper="Schedule a"
         title="30-minute meeting"
-        text="Let's talk about your project and how we can help you."
+        text="Let's exlore what can be done for your business."
       />
       <div
         className="calendly-inline-widget shadow-2xl"
