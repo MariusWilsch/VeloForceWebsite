@@ -15,7 +15,7 @@ import WhyUs from "./whyUs/whyUs"
 import React from "react";
 
 
-
+//! Blog pictures, opening of dialog in service and extra 3 boxes in forWho, book a call in nav doesn't redirect  
 
 
 export default async function Home() {
@@ -28,7 +28,7 @@ export default async function Home() {
       <CalendlyWidget />
       <MeetTheTeam />
       <Footer />
-      
+
     </div>
   )
 }

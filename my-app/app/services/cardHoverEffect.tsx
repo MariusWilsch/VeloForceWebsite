@@ -158,25 +158,25 @@ export const projects = [
     title: "Consultation",
     description:
       "The goal here is to get to know how your business operates, want to achieve and what your business need to step to the next level.",
-    link: "https://stripe.com",
+    link: "",
   },
   {
     title: "Consultation",
     description:
       "The goal here is to get to know how your business operates, want to achieve and what your business need to step to the next level.",
-    link: "https://stripe.com",
+    link: "",
   },
   {
     title: "Development",
     description:
       "In the development phase we will have continues communication to ensure that the project is customized to your business needs.",
-    link: "https://netflix.com",
+    link: "",
   },
   {
     title: "Long term Collaboration",
     description:
       "Since technology is accelerating at a rapid pace, we offer a long term collaboration to ensure that your business always stays ahead of the curve.",
-    link: "https://google.com",
+    link: "",
   },
 ];
 
