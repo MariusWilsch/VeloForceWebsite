@@ -20,6 +20,8 @@ export const BentoGrid = ({
   );
 };
 
+
+//! Pass img url through Link Component to prevent having to fetch url again in blog/[slug]
 export const BentoGridItem = ({
   className,
   title,
@@ -27,6 +29,7 @@ export const BentoGridItem = ({
   header,
   icon,
   slug,
+  imgUrl
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -34,6 +37,7 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   slug?: string;
+  imgUrl: string
 }) => {
   return (
     <div
@@ -54,11 +58,11 @@ export const BentoGridItem = ({
       </div>
       <button className="group-hover/bento:translate-x-2 transition duration-200 bg-blue-500 hover:bg-blue-700 text-white font-bold p-1  px-4 rounded self-start">
         {slug ? (
-          <Link href={slug}>Read more</Link>
+          <Link href={slug} > Read more</Link>
         ) : (
           <Link href="/error">Read more</Link>
         )}
       </button>
-    </div>
+    </div >
   );
 };

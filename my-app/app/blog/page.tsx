@@ -1,8 +1,9 @@
 import { blogPost } from "../lib/interface";
-import { client } from "../lib/sanity";
+import { client, urlFor } from "../lib/sanity";
 import {
   IconFileBroken,
 } from "@tabler/icons-react";
+import Image from 'next/image'
 
 export const revalidate = 60;
 
@@ -28,17 +29,20 @@ const Skeleton = () => (
 );
 
 function BentoGridDemo({ blogs }: { blogs: blogPost[] }) {
+  let imgUrl = ""
 
   return (
     <BentoGrid className="max-w-6xl mx-auto w-[85%] md:w-[95%] ">
       {blogs.map((item, i) => (
+        imgUrl = urlFor(item.titleImage).url(),
         <BentoGridItem
           key={i}
           title={item.title}
           description={item.smallDescription}
-          header={<Skeleton />}
+          header={<Image src={imgUrl} alt="Blog Title Image" width={600} height={400} />}
           icon={<IconFileBroken className="h-4 w-4 text-neutral-500" />}
           slug={`/blog/${item.currentSlug}`}
+          imgUrl={imgUrl}
           className={i === 3 || i === 6 ? "md:col-span-2" : "md:aspect-[1]"}
         >
         </BentoGridItem>
