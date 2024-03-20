@@ -32,7 +32,7 @@ const config: Config = {
             backgroundPosition: "-200% 0",
           },
         },
-        spin_2s_linear_infinite: { // Add this block
+        spin_2s_linear_infinite: {
           from: {
             transform: "rotate(0deg)",
           },
@@ -40,22 +40,15 @@ const config: Config = {
             transform: "rotate(360deg)",
           },
         },
-        meteor: {
-          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
-          "70%": { opacity: "1" },
-          "100%": {
-            transform: "rotate(215deg) translateX(-500px)",
-            opacity: "0",
-          },
-        },
       },
-
     },
-
+  },
+  daisyui: {
+    themes: [],
   },
   plugins: [
     require('@tailwindcss/typography'),
-    // require("daisyui")
+    require("daisyui")
   ],
 }
 
