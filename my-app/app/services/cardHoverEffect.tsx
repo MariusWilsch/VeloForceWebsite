@@ -132,10 +132,10 @@ export function CardHoverEffectDemo() {
 }
 
 const modalText = [
-  "Text 1",
-  "Text 2",
-  "Text 3",
-  "Text 4",
+  "During our 1-hour consultation, we will discuss your business processes, identify areas for improvement, and determine the specific requirements needed to optimize your operations. Your participation in providing information about your company is crucial for us to develop an understanding of your needs. By the end of the consultation, we will have a plan for creating a solution that addresses your pain points and supports your business growth.",
+  "In the pre-development stage, we will analyze your business processes and assess the technologies you currently use. Our team will develop a prototype that demonstrates how our software solution will integrate with your core technologies and improve your workflow. This prototype will allow you to test the functionality and ensure that the proposed solution meets your expectations. By testing and providing feedback on the prototype, you can be confident that the final product will be designed to meet your needs and integrate with your existing systems.",
+  "After you approve the prototype, we will begin the development stage. The duration of this stage will depend on the complexity of your requirements. For highly customized solutions, the development process may take 1-3 months. However, if your needs align with our pre-built custom software tool packages, we can deliver the solution within 1-2 weeks. Our team will work to create a software solution that addresses your business challenges and improves efficiency and productivity. After implementation, we will continue to offer support and maintenance to ensure the smooth operation of your software solution.",
+  "Our long-term collaboration plan is designed for businesses that want to stay current with technological advancements. As technologies continue to accelerate, it will become increasingly difficult for businesses to keep up, and those that fail to adapt risk being outcompeted. By partnering with Veloxforce, you gain access to our expertise and commitment to providing you with effective tools and solutions. We will monitor the performance of your software, gather feedback, and identify areas for improvement. As your business evolves and new challenges arise, we will support you with updates, enhancements, and features that keep your software solution aligned with your changing needs. This ongoing partnership ensures that your business maintains a competitive edge in your industry by leveraging the latest technologies and best practices.",
 ]
 
 
@@ -143,27 +143,26 @@ export const projects = [
   {
     title: "Consultation",
     description:
-      "The goal here is to get to know how your business operates, want to achieve and what your business need to step to the next level.",
-    link: "#why-choose-892",
+      "The goal here is to get to know how your business operates, diagnose painpoints and what your business needs to step to the next level.",
+    link: "",
   },
   {
-    title: "Consultation",
+    title: "Pre-Development",
     description:
-      "The goal here is to get to know how your business operates, want to achieve and what your business need to step to the next level.",
-    link: "#why-choose-892",
+      "In this stage we will provide you with a prototype to ensure the eventual product will absolutely satify your needs.",
+    link: "",
   },
   {
     title: "Development",
     description:
       "In the development phase we will have continues communication to ensure that the project is customized to your business needs.",
-    link: "#why-choose-892",
+    link: "",
   },
   {
     title: "Long term Collaboration",
     description:
       "Since technology is accelerating at a rapid pace, we offer a long term collaboration to ensure that your business always stays ahead of the curve.",
-    link: "#why-choose-892",
+    link: "",
   },
 ];
-
 

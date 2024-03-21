@@ -21,15 +21,18 @@ const WhyUs = () => {
     "Veloxforce solutions",
     "Regular software",
     "Hiring more employees",
-    "Build exactly based and integrable with your current workflow",
-    "Will not satisfy all your needs, so you will still be left with some manual work",
-    "Need training to get started, which will take time and money",
-    "After initial implementation there is always an option to build on top of it, which will make scaling easier",
-    "Bad customer support in case of any issues which will lead to downtime and loss of money",
-    "As your business grows, you will need to hire more employees which will increase your expenses and decrease your profit margin.",
-    "After initial implementation there is always an option to build on top of it, which will make scaling easier",
-    "Bad customer support in case of any issues which will lead to downtime and loss of money",
-    "As your business grows, you will need to hire more employees which will increase your expenses and decrease your profit margin."
+    "Veloxforce solutions provides a competitive advantage by enabling unique, value-adding features that differentiate the company, attracting more customers and driving revenue growth.",
+    "SaaS's one-size-fits-all approach limits customization, forcing businesses to adapt their processes to software constraints, leading to inefficiencies and reduced productivity.",
+    "Hiring more employees to compensate for inefficiencies leads to increased salaries and overhead costs, reducing profit margins and limiting investment in innovation.",
+    "Veloxforce software seamlessly integrates with existing workflows, automating data transfer and synchronization, reducing errors and increasing efficiency and productivity.",
+    "Bad customer support in case of any issues which will lead to downtime, loss of money and irritation.",
+    "SaaS's recurring subscription fees strain budgets and create long-term financial burdens, limiting resources for other critical areas of the business.",
+    "Custom software automates repetitive tasks, streamlining workflows and minimizing human error, allowing employees to focus on higher-value activities that drive business growth.    ",
+    "Poor SaaS customer support leads to prolonged downtime, causing financial losses, missed opportunities, and frustration for employees and customers.",
+    "Relying on a growing workforce leads to communication breakdowns, duplication of efforts, and management challenges, resulting in decreased agility and efficiency.",
+    "Custom software's scalability allows for easy addition of new features as the business grows, ensuring the software adapts to changing needs without compromising efficiency.",
+    "SaaS providers' unilateral updates may disrupt workflows, require retraining, and introduce bugs, leading to lost productivity and increased costs.",
+    "Hiring more employees necessitates additional office space and resources, increasing overhead costs, reducing profitability, and creating a rigid cost structure."
   ];
 
   const icons = [
@@ -44,7 +47,11 @@ const WhyUs = () => {
     <IconThumbDown key={'6'} size={24} className="mr-2 flex-shrink-0" />,
     <IconThumbUp key={'4'} size={24} className="mr-2 flex-shrink-0" />,
     <IconThumbDown key={'5'} size={24} className="mr-2 flex-shrink-0" />,
+    <IconThumbDown key={'6'} size={24} className="mr-2 flex-shrink-0" />,
+    <IconThumbUp key={'4'} size={24} className="mr-2 flex-shrink-0" />,
+    <IconThumbDown key={'5'} size={24} className="mr-2 flex-shrink-0" />,
     <IconThumbDown key={'6'} size={24} className="mr-2 flex-shrink-0" />
+  
   ];
 
   const borderClasses = [
@@ -59,12 +66,15 @@ const WhyUs = () => {
     " border-r-0 text-left text-slate-300",
     "border-l-0 text-left text-slate-300",
     " text-left text-slate-300",
+    " border-r-0 text-left text-slate-300",
+    "border-l-0 text-left text-slate-300",
+    " text-left text-slate-300",
     " border-r-0 text-left text-slate-300"
   ];
 
   return (
     <div className='flex flex-col justify-center items-center min-h-screen text-center w-full p-section'>
-      <span className="cs-topper">The goal of every business is to grow and thrive</span>
+      <span className="cs-topper">Is your software giving you a competitive edge, or are you blending in with the crowd?</span>
       <h2 className="cs-title">What to choose?</h2>
       <div className='mt-4 grid grid-cols-3 grid-rows-3 px-4 w-full md:w-[90%] mx-auto'>
 
