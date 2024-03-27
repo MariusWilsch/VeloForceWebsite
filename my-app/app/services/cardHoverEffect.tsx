@@ -118,7 +118,6 @@ export const Card = ({
       <div className="relative z-50">
         <div className="p-4">{children}</div>
       </div>
-      <Modal text={modalText[hoveredIndex || 0]} />
     </div>
   );
 };

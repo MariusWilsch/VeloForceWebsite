@@ -49,8 +49,8 @@ const Header = () => (
         <ul
           className="cs-ul"
         >
-          <NavItem text="Services" href="#why-choose-892" className='hidden min-[480px]:block' />
-          <NavItem text="About Us" href="#meet-team-1141" className='hidden min-[480px]:block' />
+          <NavItem text="Services" href="/#why-choose-892" className='hidden min-[480px]:block' />
+          <NavItem text="About Us" href="/#meet-team-1141" className='hidden min-[480px]:block' />
           <NavItem text="Blog" href="/blog" />
           <MovingBorderButton text='Book a call' />
         </ul>

@@ -30,18 +30,16 @@ const BottomSection = () => {
   return (
     <div className="cs-bottom">
       <ul className="cs-social">
-        <SocialLink label="facebook" url="" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" />
-        <SocialLink label="twitter" url="" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" />
-        <SocialLink label="instagram" url="" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" />
-        <SocialLink label="youtube" url="" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" />
+        <SocialLink label="twitter" url="https://twitter.com/veloxforce" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" />
+        {/* <SocialLink label="instagram" url="" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" /> */}
       </ul>
       <span className="cs-copyright">
         © Copyright 2023 - <a href="" className="cs-copyright-link">Veloxforce</a>
       </span>
       <div className="cs-flex">
-        <a href="" className="cs-copyright-link underline-on-hover">Privacy Policy</a>
+        {/* <a href="" className="cs-copyright-link underline-on-hover">Privacy Policy</a>
         <span className="cs-separater">|</span>
-        <a href="" className="cs-copyright-link underline-on-hover">Terms of Use</a>
+        <a href="" className="cs-copyright-link underline-on-hover">Terms of Use</a> */}
       </div>
     </div>
   );

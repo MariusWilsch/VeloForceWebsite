@@ -1,6 +1,9 @@
+'use client'
+import React, { useState } from 'react';
+import ServiceButton from '../components/serviceButton';
 import { CardHoverEffectDemo } from './cardHoverEffect';
-import './services.css'
-
+import './services.css';
+import Popup from '@/app/components/popup';
 
 interface SectionProps {
   children: React.ReactNode;
@@ -30,10 +33,22 @@ const Content: React.FC<ContentProps> = ({ topper, title, text }) => (
 );
 
 const Services: React.FC = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
     <Section>
       <Content topper="What can you expect?" title="Services" text="" />
       <CardHoverEffectDemo />
+      <ServiceButton onClick={handleButtonClick} />
+      {isPopupOpen && <Popup onClose={handleClosePopup} />}
     </Section>
   );
 };
