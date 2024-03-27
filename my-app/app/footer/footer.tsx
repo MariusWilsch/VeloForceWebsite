@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import './footer.css';
 import Image from 'next/image';
+import linkedIn from '@/public/linkedin-svgrepo-com.svg'
 
 interface SocialLinkProps {
   label: string;
@@ -24,18 +25,20 @@ const SocialLink: React.FC<SocialLinkProps> = ({ label, url, iconSrc }) => {
       </Link>
     </li>
   );
-};;
+}
 
 const BottomSection = () => {
   return (
     <div className="cs-bottom">
       <ul className="cs-social">
         <SocialLink label="twitter" url="https://twitter.com/veloxforce" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" />
+        <SocialLink label="LinkedIn" url="https://www.linkedin.com/company/veloxforce/about/" iconSrc={linkedIn} />
         {/* <SocialLink label="instagram" url="" iconSrc="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" /> */}
       </ul>
       <span className="cs-copyright">
         © Copyright 2023 - <a href="" className="cs-copyright-link">Veloxforce</a>
       </span>
+
       <div className="cs-flex">
         {/* <a href="" className="cs-copyright-link underline-on-hover">Privacy Policy</a>
         <span className="cs-separater">|</span>
@@ -48,7 +51,6 @@ const BottomSection = () => {
 const Footer = () => {
   return (
     <section id="footer-1390">
-
       <div className="cs-container ">
         <div className="cs-top">
         </div>

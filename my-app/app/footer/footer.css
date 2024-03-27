@@ -95,7 +95,7 @@
         transition: background-color 0.3s;
     }
     #footer-1390 .cs-social-link:hover {
-        background-color: var(--primary);
+        background-color: var(--secondary);
     }
     #footer-1390 .cs-social-link:hover .cs-social-icon {
         filter: grayscale(1) brightness(1000%);
