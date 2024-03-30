@@ -55,7 +55,7 @@ const SideBySideContentBox = () => {
 
   return (
     <div className='p-section w-full sm:w-4/5 mx-auto'>
-      <Content topper="Why Choose Us?" title="We're the best in the business" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+      <Content topper="Why Choose Us?" title="We're the best in the business" text="" />
       {contentArray.map((item, index) => (
         <div className="flex flex-col sm:flex-row text-white m-10" key={index}>
           {index % 2 === 0 ? (
