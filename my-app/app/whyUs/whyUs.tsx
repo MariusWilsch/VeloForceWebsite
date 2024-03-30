@@ -8,7 +8,7 @@ interface GridItemProps {
 }
 
 const GridItem: React.FC<GridItemProps> = ({ children, className, icon }) => (
-  <div className={`p-4 flex justify-center items-center border text-white border-gray-600 md:min-w-[10rem] md:min-h-[15rem]  ${className}`}>
+  <div className={`p-4 flex justify-center items-center md:border text-white border-gray-600 md:min-w-[10rem] md:min-h-[15rem]  ${className}`}>
     <div className="flex items-start">
       {icon}
       {children}
@@ -51,13 +51,13 @@ const WhyUs = () => {
     <IconThumbUp key={'4'} size={24} className="mr-2 flex-shrink-0" />,
     <IconThumbDown key={'5'} size={24} className="mr-2 flex-shrink-0" />,
     <IconThumbDown key={'6'} size={24} className="mr-2 flex-shrink-0" />
-  
+
   ];
 
   const borderClasses = [
-    "border-l-0 text-3xl md:text-[32px] lg:text-5xl ",
+    "border-l-0 text-2xl md:text-[32px] lg:text-5xl",
     "text-2xl md:text-[32px] lg:text-5xl",
-    "border-r-0 text-2xl md:text-[32px] lg:text-5xl",
+    "border-r-0 text-1xl md:text-[32px] lg:text-5xl",
     "border-l-0 text-left text-slate-300",
     " text-left text-slate-300",
     "border-r-0 text-left text-slate-300",
@@ -66,20 +66,24 @@ const WhyUs = () => {
     " border-r-0 text-left text-slate-300",
     "border-l-0 text-left text-slate-300",
     " text-left text-slate-300",
-    " border-r-0 text-left text-slate-300",
+    "border-r-0 text-left text-slate-300",
     "border-l-0 text-left text-slate-300",
     " text-left text-slate-300",
-    " border-r-0 text-left text-slate-300"
+    "border-r-0 text-left text-slate-300"
   ];
 
   return (
     <div className='flex flex-col justify-center items-center min-h-screen text-center w-full p-section'>
       <span className="cs-topper">Is your software giving you a competitive edge, or are you blending in with the crowd?</span>
       <h2 className="cs-title">What to choose?</h2>
-      <div className='mt-4 grid grid-cols-3 grid-rows-3 px-4 w-full md:w-[90%] mx-auto'>
+      <div className='mt-4 grid grid-cols-1 md:grid-cols-3 px-4 w-full md:w-[90%] mx-auto'>
 
         {texts.map((text, index) => (
-          <GridItem key={index} className={borderClasses[index]} icon={icons[index]}>
+          <GridItem
+            key={index}
+            className={`${borderClasses[index]} ${index % 3 !== 0 ? 'sm:block hidden' : ''}`}
+            icon={icons[index]}
+          >
             {text}
           </GridItem>
         ))}
