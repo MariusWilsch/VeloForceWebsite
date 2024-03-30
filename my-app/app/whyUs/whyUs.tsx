@@ -55,21 +55,21 @@ const WhyUs = () => {
   ];
 
   const borderClasses = [
-    "border-l-0 text-2xl md:text-[32px] lg:text-5xl",
-    "text-2xl md:text-[32px] lg:text-5xl",
-    "border-r-0 text-1xl md:text-[32px] lg:text-5xl",
-    "border-l-0 text-left text-slate-300",
-    " text-left text-slate-300",
-    "border-r-0 text-left text-slate-300",
-    "border-l-0 text-left text-slate-300",
-    " text-left text-slate-300",
-    " border-r-0 text-left text-slate-300",
-    "border-l-0 text-left text-slate-300",
-    " text-left text-slate-300",
-    "border-r-0 text-left text-slate-300",
-    "border-l-0 text-left text-slate-300",
-    " text-left text-slate-300",
-    "border-r-0 text-left text-slate-300"
+    "border-l-0  text-3xl lg:text-5xl",
+    "text-3xl lg:text-5xl",
+    "border-r-0 text-3xl  lg:text-5xl",
+    "text-lg md:text-1xl border-l-0 text-left text-slate-300",
+    "text-lg md:text-1xl  text-left text-slate-300",
+    "text-lg md:text-1xl border-r-0 text-left text-slate-300",
+    "text-lg md:text-1xl border-l-0 text-left text-slate-300",
+    "text-lg md:text-1xl  text-left text-slate-300",
+    "text-lg md:text-1xl  border-r-0 text-left text-slate-300",
+    "text-lg md:text-1xl border-l-0 text-left text-slate-300",
+    "text-lg md:text-1xl  text-left text-slate-300",
+    "text-lg md:text-1xl border-r-0 text-left text-slate-300",
+    "text-lg md:text-1xl border-l-0 text-left text-slate-300",
+    "text-lg md:text-1xl  text-left text-slate-300",
+    "text-lg md:text-1xl border-r-0 text-left text-slate-300"
   ];
 
   return (
@@ -81,7 +81,7 @@ const WhyUs = () => {
         {texts.map((text, index) => (
           <GridItem
             key={index}
-            className={`${borderClasses[index]} ${index % 3 !== 0 ? 'sm:block hidden' : ''}`}
+            className={`${borderClasses[index]} ${index % 3 !== 0 ? 'sm:flex hidden' : ''}`}
             icon={icons[index]}
           >
             {text}
