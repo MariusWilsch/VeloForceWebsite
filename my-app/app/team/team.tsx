@@ -3,6 +3,9 @@ import Image, { StaticImageData } from 'next/image'
 import dirk from '@/public/Dirk.png'
 import Marius from '@/public/Marius.png'
 import './team.css'
+import linkedIn from '@/public/linkedin-svgrepo-com.svg'
+import '../footer/footer.css'
+import Link from 'next/link'
 
 const CSContent = () => {
   return (
@@ -21,9 +24,10 @@ interface CSCardItemProps {
   name: string
   job: string
   imgSrc: StaticImageData
+  link: string
 }
 
-const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
+const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc, link }) => {
   return (
     <li className="cs-item pt-10" >
       <div className="cs-picture">
@@ -35,7 +39,7 @@ const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
           className="z-[-1] transition-transform duration-700 ml-8 md:ml-4"
         />
       </div>
-      <div className="cs-info">
+      <div className="cs-info ">
         <span className="cs-name">{name}</span>
         <span className="cs-job">{job}</span>
       </div>
@@ -45,8 +49,8 @@ const CSCardItem: React.FC<CSCardItemProps> = ({ name, job, imgSrc }) => {
 
 const CSCardGroup = () => {
   const teamMembers = [
-    { name: 'Dirk Tunderman', job: 'Co-Founder', imgSrc: dirk },
-    { name: 'Marius Wilsch', job: 'Co-Founder', imgSrc: Marius },
+    { name: 'Dirk Tunderman', job: 'Co-Founder', imgSrc: dirk, link: 'https://www.linkedin.com/in/dirk-tunderman-b71478212/' },
+    { name: 'Marius Wilsch', job: 'Co-Founder', imgSrc: Marius, link: "https://www.linkedin.com/in/marius-wilsch/" },
     // add more team members here
   ]
 

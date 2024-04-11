@@ -9,7 +9,7 @@ interface SocialLinkProps {
   iconSrc: string;
 }
 
-const SocialLink: React.FC<SocialLinkProps> = ({ label, url, iconSrc }) => {
+export const SocialLink: React.FC<SocialLinkProps> = ({ label, url, iconSrc }) => {
   return (
     <li className="cs-social-li">
       <Link href={url} target='_blank'>
